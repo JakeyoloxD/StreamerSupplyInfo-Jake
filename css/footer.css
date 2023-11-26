@@ -1,0 +1,27 @@
+/* Mobile First View: */
+footer {
+    background: #379392;
+    color: #fff;
+    padding: 32px;
+    text-align: center;
+    clear: both; /* Clear floats before the footer */
+    position: relative; /* Ensure relative positioning */
+    margin-top: 200px; /* Adjust margin as needed */
+}
+/* colour the text of links in the footer black */
+  footer a {
+	color: #379392;
+}
+footer a:hover {
+    background-color: black;
+    color: white;
+    outline: none;
+    padding: 10px;
+  }
+  /* Change the color of links in the footer on focus using tab button */
+footer a:focus {
+    background-color: black;
+    color: white;
+    outline: none;
+      padding: 10px;
+  }

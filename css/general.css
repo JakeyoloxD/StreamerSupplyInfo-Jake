@@ -1,0 +1,9 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	background: #B3E1E6;
+	font-family: "Helvetica Neue", Arial, sans-serif;
+	font-weight:200;
+	margin: 0;
+}
