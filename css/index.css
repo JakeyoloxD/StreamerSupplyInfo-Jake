@@ -1,152 +1,169 @@
 /* Mobile First View: */
+
 /* For mobile: */
 @media only screen and (max-width: 767px) {
-h2 {
-	display: none;
-}
-h3 {
-	text-align: center;
-}
-section {
-    float: none; /* Remove the float property */
-    width: 100%; /* Set width to 100% to take up the full width */
-}
-aside {
-	background: #B3E1E6; /* Updated color */
-	font-size: 120%;
-	padding: 5px 0;
-	text-align: center;
-	width: 100%;
-}
-/* Style the links in the aside section */
-aside a {
-	color: #379392; /* Updated color */
-	display: block;
-	padding: 5px 0;
-	text-decoration: none;
-	width: 100%;
-}
-/* Change the color of aside links on hover using mouse */
-aside a:hover {
-	background-color: #379392; /* Updated color */
-	color: white;
-}
-/* Change the color of aside links on focus using tab key */
-aside a:focus {
-  background-color: #379392; /* Updated color */
-  color: #B3E1E6; /* Updated color */
-  outline: none;
-}
-article {
-	background-color: #B3E1E6; /* Updated color */
-	color: #379392; /* Updated color */
-	font-size: 100%;
-	text-align: center;
-	padding: 0 10px;
-	margin-bottom: 20px; /* Add margin to separate the articles */
-}
-article a {
-	color: #379392; /* Updated color */
-	padding: 5px;
-	text-decoration: none;
-}
-/* Change the color of article links on hover using mouse */
-article a:hover {
-  background-color: #B3E1E6; /* Updated color */
-  color: #379392; /* Updated color */
-}
-/* Change the color of article links on focus using tab key */
-article a:focus {
-  background-color: white;
-  color: #379392; /* Updated color */
-  outline: none;
-}
-#main_image {
-	width: 100%;
-}
-
-.column-container {
-    display: flex;
-    flex-direction: column; /* Change to column to stack columns vertically */
-    justify-content: space-between;
-    margin-top: 20px;
-  }
-.column {
-    flex: 1;
-    padding: 10px;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-    width: 100%; /* Set each column to take up 100% of the width */
-    margin-bottom: 20px; /* Add margin to separate the columns */
-  }
-.gamer-container {
-    display: flex;
-    flex-direction: column; /* Change to column to stack columns vertically */
-    justify-content: space-between;
-    margin-top: 20px;
-  }
-	.gamers {
-		display: flex;
-		flex-direction: column; /* Change to column to stack columns vertically */
-		justify-content: space-between;
-		margin-top: 20px;
-	  }
-  .gamers img { /*The Streamer/Gamer Images have their own classes but this was enough*/
-    width: 100%; /* Set each image to take up 100% of the width */
-    max-width: 100%; /* Ensure images don't exceed their container's width */
-    box-sizing: border-box;
-  }
-}
-/* For desktop: */
-@media only screen and (min-width: 768px) {
-	main {
-		display: flex;
-		flex-wrap: wrap; /* Allow items to wrap to the next line */
-		justify-content: space-around; /* Horizontally center the content */
-		align-items: flex-start; /* Align items to the top of the container */		
-		}    
-	#main_image {
-		width: 100%;
-		max-width: 100%;
-		height: auto; /* Maintain the aspect ratio */		
-		}	
-    section {
-        width: 60%; /* Adjust the width of the section as needed */       
-    }
-	aside {
-		width: 100%; /* Take up full width */        
-		align-items: center;
-		display: flex;
-		flex-direction: row; /* Display links horizontally */
-        justify-content: space-around; /* Adjust as needed */
-		}
-	article {
-			text-align: center; /* Center the text inside the article on desktop */
-			width: 100%; /* Ensure the article takes up the full width */			
-		}
+	/* Hide h2 and h4 elements on mobile */
+	h2 {
+	  display: none;
 	}
-aside a {
-	width: auto; /* Allow links to take their natural width */
-}
-.column-container,
-.gamer-container {
-	display: flex;
-	justify-content: space-between;
-	margin-top: 20px;
-	max-width: 100%;	
-}
-.column {
-    flex: 1;
-    padding: 10px;
-    border: 1px solid #B3E1E6;
-    box-sizing: border-box;
-}
-.gamers {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;  
-}
-.gamers img {
-    width: 50%; /*Set each image to take up 50% of the width*/
-	height: auto; /* Maintain the aspect ratio */
-}
+	h4 {
+	  display: none;
+	}  
+	/* Center align h3 elements on mobile */
+	h3 {
+	  text-align: center;
+	}  
+	/* Adjust layout for section, aside, and article elements on mobile */
+	section {
+	  float: none;
+	  width: 100%;
+	}  
+	aside {
+	  /* Style the aside section for mobile */
+	  background: #B3E1E6;
+	  font-size: 120%;
+	  padding: 5px 0;
+	  text-align: center;
+	  width: 100%;
+	}
+  
+	/* Style links in the aside section */
+	aside a {
+	  color: #379392;
+	  display: block;
+	  padding: 5px 0;
+	  text-decoration: none;
+	  width: 100%;
+	}  
+	/* Change link color on hover */
+	aside a:hover {
+	  background-color: #379392;
+	  color: white;
+	}  
+	/* Change link color on focus using tab key */
+	aside a:focus {
+	  background-color: #379392;
+	  color: #B3E1E6;
+	  outline: none;
+	}  
+	/* Style article elements on mobile */
+	article {
+	  background-color: #B3E1E6;
+	  color: #379392;
+	  font-size: 100%;
+	  text-align: center;
+	  padding: 0 10px;
+	  margin-bottom: 20px;
+	}  
+	/* Style article links on mobile */
+	article a {
+	  color: #379392;
+	  padding: 5px;
+	  text-decoration: none;
+	}  
+	/* Change article link color on hover */
+	article a:hover {
+	  background-color: #B3E1E6;
+	  color: #379392;
+	}  
+	/* Change article link color on focus using tab key */
+	article a:focus {
+	  background-color: white;
+	  color: #379392;
+	  outline: none;
+	}  
+	/* Style the main image on mobile */
+	#main_image {
+	  width: 100%;
+	}  
+	/* Style column containers on mobile */
+	.column-container {
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: space-between;
+	  margin-top: 20px;
+	}  
+	/* Style individual columns on mobile */
+	.column {
+	  flex: 1;
+	  padding: 10px;
+	  border: 1px solid #ccc;
+	  box-sizing: border-box;
+	  width: 100%;
+	  margin-bottom: 20px;
+	}  
+	/* Style gamer containers and images on mobile */
+	.gamer-container,
+	.gamers {
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: space-between;
+	  margin-top: 20px;
+	}  
+	.gamers img {
+	  width: 100%;
+	  max-width: 100%;
+	  box-sizing: border-box;
+	}
+  }  
+  /* For desktop: */
+  @media only screen and (min-width: 768px) {
+	/* Adjust layout for main container on desktop */
+	main {
+	  display: flex;
+	  flex-wrap: wrap;
+	  justify-content: space-around;
+	  align-items: flex-start;
+	}  
+	/* Style the main image on desktop */
+	#main_image {
+	  width: 100%;
+	  max-width: 100%;
+	}  
+	/* Adjust layout for section, aside, and article elements on desktop */
+	section {
+	  width: 100%;
+	}  
+	aside {
+	  width: 100%;
+	  align-items: center;
+	  display: flex;
+	  flex-direction: row;
+	  justify-content: space-around;
+	}  
+	/* Style article elements on desktop */
+	article {
+	  text-align: center;
+	  width: 100%;
+	}  
+	/* Style gamer containers and images on desktop */
+	.gamers {
+	  display: flex;
+	  justify-content: space-between;
+	  margin-top: 20px;
+	}  
+	.gamers img {
+	  width: 50%;
+	  height: auto;
+	}  
+	/* Style links in the aside section on desktop */
+	aside a {
+	  width: auto;
+	}  
+	/* Style column containers on desktop */
+	.column-container,
+	.gamer-container {
+	  display: flex;
+	  justify-content: space-between;
+	  margin-top: 20px;
+	  margin-bottom: 50px;
+	  max-width: 100%;
+	}  
+	/* Style individual columns on desktop */
+	.column {
+	  flex: 1;
+	  padding: 10px;
+	  border: 1px solid #B3E1E6;
+	  box-sizing: border-box;
+	}
+  }

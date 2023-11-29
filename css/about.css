@@ -1,66 +1,74 @@
+/* Style for h2 elements */
 h2 {
-    font-size: 24px;
-    font-weight: normal;
-    text-align: center;
-  }
-  p {
-    font-size: 18px;
-  }
-  main > div {
-    background-color: #B3E1E6;
-    border-radius: 10px;
-    font-size: 30px;
-    padding: 20px;
-    text-align: left;
-  }
-  /* colour the text of links black */
+  font-size: 24px; /* Set font size for h2 */
+  font-weight: normal; /* Set font weight for h2 */
+  text-align: center; /* Center align the text in h2 */
+}
+/* Style for p elements */
+p {
+  font-size: 18px; /* Set font size for paragraphs */
+}
+/* Style for main > div */
+main > div {
+  background-color: #B3E1E6; /* Set background color */
+  border-radius: 10px; /* Apply rounded corners */
+  font-size: 30px; /* Set font size */
+  padding: 20px; /* Add padding inside the div */
+  text-align: left; /* Left align text */
+}
+/* Color the text of links inside main > div */
 main > div > a {
-    color: #4B3C35;
-    font-size: 18px;
-  }
-  /* Change the colour of links on hover using mouse */
+  color: #4B3C35; /* Set text color for links */
+  font-size: 18px; /* Set font size for links */
+}
+/* Change the color of links on hover inside main > div using the mouse */
 main > div > a:hover {
-    background-color: #379392;
-    color: #B3E1E6;
-  }
-  /* Change the color of links on focus using tab button */
+  background-color: #379392; /* Change background color on hover */
+  color: #B3E1E6; /* Change text color on hover */
+}
+/* Change the color of links on focus inside main > div using the tab button */
 main > div > a:focus {
-    background-color: #379392;
-    color: #B3E1E6;
-    outline: none;
-  }
-  main > div > img {
-    width: 100%;
-  }
-  #container2 {
-    grid-area: area2;
-  }
-  #container3 {
-    grid-area: area3;
-  }
-  #container4 {
-    grid-area: area4;
-  }
-  main {
-    background-color: #379392;
-    display: grid;
-    grid-template-areas:
-    '.'
-    'area2'
-    'area2'
-    'area3'
-    'area3'
-    'area4'
-    'area4';    
-    grid-gap: 20px;
-    padding: 20px;
-  }
-  /* Large devices (laptops/desktops, 992px and up) */
+  background-color: #379392; /* Change background color on focus */
+  color: #B3E1E6; /* Change text color on focus */
+  outline: none; /* Remove outline */
+}
+/* Style for images inside main > div */
+main > div > img {
+  width: 100%; /* Set image width to 100% of its container */
+}
+/* Set grid areas for containers */
+#container2 {
+  grid-area: area2;
+}
+#container3 {
+  grid-area: area3;
+}
+#container4 {
+  grid-area: area4;
+}
+/* Style for the main element */
+main {
+  background-color: #379392; /* Set background color for the main element */
+  display: grid; /* Enable grid layout for the main element */
+  grid-template-areas:
+    '.' 'area2' 'area2' 'area3' 'area3' 'area4' 'area4'; /* Define grid areas */
+  grid-gap: 20px; /* Set gap between grid items */
+  padding: 20px; /* Add padding inside the main element */
+}
+/* Style for .gamers class */
+.gamers {
+  display: flex; /* Enable flex layout for the .gamers class */
+  justify-content: space-between; /* Space items evenly along the main axis */
+  margin-top: 20px; /* Add top margin */
+}
+/* Style for .gamers img within .gamers class */
+.gamers img {
+  width: 100%; /* Set image width to 100% of its container */
+  height: auto; /* Maintain the aspect ratio */
+}
+/* Media query for large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    main {
-      grid-template-areas:
-      '. area3 '
-      'area2 area3 '
-      'area2 area4 ';
-    }  
+  main {
+    grid-template-areas: '. area3 ' 'area2 area3 ' 'area2 area4 '; /* Adjust grid areas for larger screens */
   }
+}

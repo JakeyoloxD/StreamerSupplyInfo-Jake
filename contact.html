@@ -12,14 +12,14 @@
 	<link rel="stylesheet" href="css/footer.css">
 </head>
 <body>
-
+    <div itemscope itemtype="https://schema.org/ContactPage">
 	<header>
-		<h1>Streamer Supply Info</h1> 
+		<h1 itemprop="name">Streamer Supply Info</h1> 
         <label for="hamburger_checkbox">
             <img id="hamburger_image" src="images/hamburger-menu.svg" alt="Expand and collapse menu.">
         </label>
         <input id="hamburger_checkbox" type="checkbox">
-		<nav>
+		<nav itemprop="breadcrumb">
 			<a href="index.html">Home</a>
             <a href="about.html">About</a>
 			<a href="gallery.html">Gallery</a>            
@@ -36,8 +36,8 @@
         <button type="submit" >Submit</button><br />
     </form> 
     <footer>
-        <p> &copy; Streamer Supply Info</p>      
+        <p itemprop="creator"> &copy; Streamer Supply Info</p>      
     </footer>
-  
+</div>  
 </body>
 </html>

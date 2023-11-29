@@ -1,27 +1,29 @@
 /* Mobile First View: */
+/* Style the footer */
 footer {
-    background: #379392;
-    color: #fff;
-    padding: 32px;
-    text-align: center;
-    clear: both; /* Clear floats before the footer */
-    position: relative; /* Ensure relative positioning */
-    margin-top: 200px; /* Adjust margin as needed */
+  background: #379392; /* Set the background color of the footer */
+  color: #fff; /* Set the text color of the footer */
+  padding: 32px; /* Add padding to the footer */
+  text-align: center; /* Center-align the text within the footer */
+  clear: both; /* Clear floats before the footer to ensure proper positioning */
+  position: relative; /* Ensure relative positioning for child elements */
+  margin-top: 200px; /* Adjust the top margin of the footer (spacing from content above) */
 }
-/* colour the text of links in the footer black */
-  footer a {
-	color: #379392;
+/* Color the text of links in the footer black */
+footer a {
+  color: #379392; /* Set the text color of links in the footer */
 }
+/* Style the appearance of links in the footer on hover */
 footer a:hover {
-    background-color: black;
-    color: white;
-    outline: none;
-    padding: 10px;
-  }
-  /* Change the color of links in the footer on focus using tab button */
+  background-color: black; /* Change background color on hover */
+  color: white; /* Change text color on hover */
+  outline: none; /* Remove outline */
+  padding: 10px; /* Add padding to improve click/touch interaction */
+}
+/* Change the color of links in the footer on focus using the tab button */
 footer a:focus {
-    background-color: black;
-    color: white;
-    outline: none;
-      padding: 10px;
-  }
+  background-color: black; /* Change background color on focus */
+  color: white; /* Change text color on focus */
+  outline: none; /* Remove outline */
+  padding: 10px; /* Add padding to improve accessibility and focus visibility */
+}

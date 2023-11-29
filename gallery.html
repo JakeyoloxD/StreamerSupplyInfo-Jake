@@ -11,16 +11,15 @@
 	<link rel="stylesheet" href="css/gallery.css" >
 	<link rel="stylesheet" href="css/footer.css">
 </head>
-
 <body>
-
-	<header>
-		<h1>Streamer Supply Info</h1> 
+	<div itemscope itemtype="https://schema.org/MediaGallery">
+		<header>
+			<h1 itemprop="name">Streamer Supply Info</h1> 
         <label for="hamburger_checkbox">
             <img id="hamburger_image" src="images/hamburger-menu.svg" alt="Expand and collapse menu.">
         </label>
         <input id="hamburger_checkbox" type="checkbox">
-		<nav>
+		<nav itemprop="breadcrumb">
 			<a href="index.html">Home</a>
             <a href="about.html">About</a>
 			<a class="active_nav" href="gallery.html">Gallery</a>
@@ -30,41 +29,40 @@
     <div id="row"> 
 
 		<div class="column">
-			<img src="images/480w/mouse.jpg" alt="Gaming Mouse" title="Gaming Mouse" >
-			<img src="images/480w/keyboard.jpg" alt="Keyboard" title="Keyboard" >
-			<img src="images/480w/controller.jpg" alt="Gaming Controller" title="Gaming Controller" >            
-            <img src="images/480w/capture.jpg" alt="capture card" title="capture card" >
+			<img itemprop="image" src="images/480w/mouse.jpg" alt="Gaming Mouse" title="Gaming Mouse" >
+			<img itemprop="image" src="images/480w/keyboard.jpg" alt="Keyboard" title="Keyboard" >
+			<img itemprop="image" src="images/480w/controller.jpg" alt="Gaming Controller" title="Gaming Controller" >            
+            <img itemprop="image" src="images/480w/capture.jpg" alt="capture card" title="capture card" >
             
 			
 		</div>
-
 		<div class="column">
-			<img src="images/480w/desk.jpg" alt="Desk" title="Desk" >
-            <img src="images/480w/hdmi.jpg" alt="HDMI cable" title="HDMI cable" >
-            <img src="images/480w/headset.jpg" alt="Headset" title="Headset" >
-			<img src="images/480w/cam.jpg" alt="Webcamera" title="Streamcam" >
+			<img itemprop="image" src="images/480w/desk.jpg" alt="Desk" title="Desk" >
+            <img itemprop="image" src="images/480w/hdmi.jpg" alt="HDMI cable" title="HDMI cable" >
+            <img itemprop="image" src="images/480w/headset.jpg" alt="Headset" title="Headset" >
+			<img itemprop="image" src="images/480w/cam.jpg" alt="Webcamera" title="Streamcam" >
             
 		</div>
-
 		<div class="column">			
-            <img src="images/480w/mixer.jpg" alt="Audio Mixer" title="Audio Mixer" >
-            <img src="images/480w/zv1.jpg" alt="Sony ZV1 Camera" title="Sony ZV1 Camera" >
-            <img src="images/480w/screen.jpg" alt="Monitor" title="Monitor" >
-			<img src="images/480w/xlr.jpg" alt="XLR Cables" title="XLR Cables" >
+            <img itemprop="image" src="images/480w/mixer.jpg" alt="Audio Mixer" title="Audio Mixer" >
+            <img itemprop="image" src="images/480w/zv1.jpg" alt="Sony ZV1 Camera" title="Sony ZV1 Camera" >
+            <img itemprop="image" src="images/480w/screen.jpg" alt="Monitor" title="Monitor" >
+			<img itemprop="image" src="images/480w/xlr.jpg" alt="XLR Cables" title="XLR Cables" >
 			
 		</div>
-
 		<div class="column">			
-            <img src="images/480w/streamdeck.jpg" alt="Streamdeck" title="Streamdeck" >
-			<img src="images/480w/sm7b.jpg" alt="Shure SM7B Microphone" title="Shure SM7B Microphone" >
-            <img src="images/480w/light.jpg" alt="Keylight" title="Keylight" >
-            <img src="images/480w/boom.jpg" alt="Microphone arm" title="Microphone arm" >
-		</div>
-		
+            <img itemprop="image" src="images/480w/streamdeck.jpg" alt="Streamdeck" title="Streamdeck" >
+			<img itemprop="image" src="images/480w/sm7b.jpg" alt="Shure SM7B Microphone" title="Shure SM7B Microphone" >
+            <img itemprop="image" src="images/480w/light.jpg" alt="Keylight" title="Keylight" >
+            <img itemprop="image" src="images/480w/boom.jpg" alt="Microphone arm" title="Microphone arm" >
+		</div>		
 	</div>
-
+	<aside>
+		<a itemprop="copyrightHolder" href="sources.html">Image Sources</a>	
+	</aside>	
     <footer>
-        <p>&copy; Streamer Supply Info</p>
+        <p itemprop="creator">&copy; Streamer Supply Info</p>
     </footer>
+</div>	
 </body>
 </html>

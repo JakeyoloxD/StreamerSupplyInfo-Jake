@@ -1,34 +1,103 @@
 /* Mobile First View */
 /* Gallery Grid */
+/* Style the row container for the gallery grid */
 #row {
 	display: flex;
 	flex-wrap: wrap;
 	padding: 0 12px;
 	vertical-align: middle;
-}
-.column {
+  }  
+  /* Style individual columns in the gallery grid */
+  .column {
 	margin-top: 0;
 	max-width: 100%;
 	vertical-align: middle;
 	margin: 0 auto; /* Center the column */
-}
-.column img {
+  }  
+  /* Style images inside the gallery grid columns */
+  .column img {
 	padding-bottom: 10px;
 	width: 100%;
-}
-/* For desktops */
-@media only screen and (min-width: 768px) {
+  }  
+  /* Style the section containing articles in the gallery grid */
+  section {
+	background-color: #B3E1E6; /* Set background color */
+	color: #379392; /* Set text color */
+	font-size: 100%;
+	text-align: center;
+	padding: 0 10px;
+	margin-bottom: 20px; /* Add margin to separate the articles */
+  }  
+  /* Style the source grid for the gallery */
+  .source_grid {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 0 12px;
+	max-width: 1200px; /* Set maximum width for the grid */
+	margin: 0 auto; /* Center the grid */
+  }  
+  /* Style individual columns in the source grid */
+  .source_column {
+	flex: 1 0 20%; /* Set flex properties for 5 columns in the grid */
+	margin: 0 6px;
+  }  
+  /* Style the section inside the source column */
+  .source_column section {
+	background-color: #B3E1E6; /* Set background color */
+	color: #379392; /* Set text color */
+	font-size: 100%;
+	text-align: center;
+	padding: 0 10px;
+	margin-bottom: 20px;
+  }  
+  /* Style links inside the source column section */
+  .source_column section a {
+	text-decoration: none;
+	font-weight: bold;
+  }  
+  /* For desktops */
+  @media only screen and (min-width: 768px) {
+	/* Adjust styles for columns on desktop */
 	.column {
-		max-width: 50%;
-		padding: 0 6px;
-	}
+	  max-width: 50%;
+	  padding: 0 6px;
+	}	
+	/* Adjust styles for the row container on desktop */
 	#row {
-	padding: 0 6px;
+	  padding: 0 6px;
+	}  
+	/* Style the aside container on desktop */
+	aside {
+	  align-items: center;
+	  display: flex;
+	  flex-direction: column;
+	  float: right;
+	  justify-content: center;
+	  width: 100%;
+	}  
+	/* Adjust styles for columns in the source grid on desktop */
+	.source_column {
+	  flex: 1 0 24%; /* Set flex properties for 4 columns in the grid */
 	}
-}
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+  }  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+	/* Further adjustments for larger screens */
 	.column {
-		max-width: 25%;
+	  max-width: 25%;
+	}  
+	/* Adjust styles for the aside container on larger screens */
+	aside {
+	  align-items: center;
+	  display: flex;
+	  flex-direction: column;
+	  float: right;
+	  justify-content: center;
+	  width: 30%;
+	}  
+	/* Adjust styles for columns in the source grid on larger screens */
+	.source_column {
+	  flex: 1 0 19%; /* Set flex properties for 5 columns in the grid */
 	}
-}
+  }

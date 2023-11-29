@@ -1,9 +1,11 @@
+/* Apply box-sizing: border-box to all elements */
 * {
 	box-sizing: border-box;
-}
-body {
-	background: #B3E1E6;
-	font-family: "Helvetica Neue", Arial, sans-serif;
-	font-weight:200;
-	margin: 0;
-}
+  }  
+  /* Set styles for the body element */
+  body {
+	background: #B3E1E6; /* Set background color for the body */
+	font-family: "Helvetica Neue", Arial, sans-serif; /* Set font family for the body text */
+	font-weight: 200; /* Set font weight for the body text */
+	margin: 0; /* Remove default margin to ensure a consistent layout */
+  }
