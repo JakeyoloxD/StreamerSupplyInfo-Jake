@@ -11,11 +11,12 @@ footer {
 }
 /* Color the text of links in the footer black */
 footer a {
-  color: #379392; /* Set the text color of links in the footer */
+  color: #ffffff; /* Set the text color of links in the footer */
+  text-decoration: none;
 }
 /* Style the appearance of links in the footer on hover */
 footer a:hover {
-  background-color: black; /* Change background color on hover */
+  background-color: greenyellow; /* Change background color on hover */
   color: white; /* Change text color on hover */
   outline: none; /* Remove outline */
   padding: 10px; /* Add padding to improve click/touch interaction */
