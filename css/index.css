@@ -118,7 +118,7 @@
 	/* Style the main image on desktop */
 	#main_image {
 	  width: 100%;
-	  max-width: 100%;
+	  max-width: 100%;	 
 	}  
 	/* Adjust layout for section, aside, and article elements on desktop */
 	section {

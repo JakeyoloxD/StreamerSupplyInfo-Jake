@@ -4,6 +4,10 @@ h2 {
   font-weight: normal; /* Set font weight for h2 */
   text-align: center; /* Center align the text in h2 */
 }
+/* Style for h3 elements */
+h3 {
+  display: none;
+}
 /* Style for p elements */
 p {
   font-size: 18px; /* Set font size for paragraphs */
@@ -35,23 +39,38 @@ main > div > a:focus {
 /* Style for images inside main > div */
 main > div > img {
   width: 100%; /* Set image width to 100% of its container */
+  height: auto; /* Maintain the aspect ratio */
 }
 /* Set grid areas for containers */
+#container1 {
+  grid-area: streaming;
+}
 #container2 {
-  grid-area: area2;
+  grid-area: information;
 }
 #container3 {
-  grid-area: area3;
+  grid-area: equipment;
 }
 #container4 {
-  grid-area: area4;
+  grid-area: origin;
+}
+#get-started-section {
+  background-color: #B3E1E6; /* Set background color */
+  border-radius: 10px; /* Apply rounded corners */
+  font-size: 30px; /* Set font size */
+  padding: 20px; /* Add padding inside the section */
+  text-align: center; /* Left align text */
+  margin-top: 20px; /* Add top margin */  
 }
 /* Style for the main element */
 main {
   background-color: #379392; /* Set background color for the main element */
   display: grid; /* Enable grid layout for the main element */
   grid-template-areas:
-    '.' 'area2' 'area2' 'area3' 'area3' 'area4' 'area4'; /* Define grid areas */
+  'streaming equipment'
+  'information origin'
+  'get-started set-up'; /* Adjusted grid area for get-started */
+  grid-template-rows: repeat(3, 1fr); /* Equal height rows for the main element */
   grid-gap: 20px; /* Set gap between grid items */
   padding: 20px; /* Add padding inside the main element */
 }
@@ -69,6 +88,10 @@ main {
 /* Media query for large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   main {
-    grid-template-areas: '. area3 ' 'area2 area3 ' 'area2 area4 '; /* Adjust grid areas for larger screens */
+    grid-template-areas:
+      'streaming equipment'
+      'information origin'
+      'get-started get-started'; /* Adjusted grid area for get-started in larger devices */
+    grid-template-rows: repeat(2, 1fr) auto;
   }
 }

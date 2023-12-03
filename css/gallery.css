@@ -1,4 +1,18 @@
 /* Mobile First View */
+/* Style for h3 elements */
+h3 {
+	display: none;
+  }
+h2 {
+	font-size: 24px; /* Set font size for h2 */
+	font-weight: normal; /* Set font weight for h2 */
+	text-align: center; /* Center align the text in h2 */
+  }
+h1 {
+	font-size: 36px; /* Set font size for h2 */
+	font-weight: normal; /* Set font weight for h2 */
+	text-align: center; /* Center align the text in h2 */
+  }
 /* Gallery Grid */
 /* Style the row container for the gallery grid */
 #row {
