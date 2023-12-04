@@ -51,9 +51,7 @@ main > div > img {
 #container3 {
   grid-area: equipment;
 }
-#container4 {
-  grid-area: origin;
-}
+
 #get-started-section {
   background-color: #B3E1E6; /* Set background color */
   border-radius: 10px; /* Apply rounded corners */
@@ -65,13 +63,6 @@ main > div > img {
 /* Style for the main element */
 main {
   background-color: #B3E1E6; /* Set background color for the main element */
-  display: grid; /* Enable grid layout for the main element */
-  grid-template-areas:
-  'streaming equipment'
-  'information origin'
-  'get-started set-up'; /* Adjusted grid area for get-started */
-  grid-template-rows: repeat(3, 1fr); /* Equal height rows for the main element */
-  grid-gap: 20px; /* Set gap between grid items */
   padding: 20px; /* Add padding inside the main element */
 }
 /* Style for .gamers class */
@@ -90,8 +81,50 @@ main {
   main {
     grid-template-areas:
       'streaming equipment'
-      'information origin'
+      'information'
       'get-started get-started'; /* Adjusted grid area for get-started in larger devices */
     grid-template-rows: repeat(2, 1fr) auto;
   }
-}
+}/* Media query for small devices (mobile view, up to 991px) */
+@media only screen and (max-width: 991px) {
+  /* Set .gamers class to full width */
+  .gamers {
+    flex-direction: column; /* Stack items vertically */
+    
+    height: auto; /* Set height to auto */
+  }
+
+  /* Remove margin-top for .gamers */
+  .gamers {
+    margin-top: 0; /* Remove top margin */
+    height: auto; /* Set to auto or a specific height */
+    
+  }
+  /* Set #container1 to full width below .gamers */
+  #container1 {
+    grid-area: streaming;
+    width: 100%;
+  }
+
+  /* Set #container2 (equipment) to full width below #container1 */
+  #container2 {
+    grid-area: information;
+    width: 100%;
+  }
+
+  /* Set #container3 to full width below #container2 */
+  #container3 {
+    grid-area: equipment;
+    width: 100%;
+  }
+
+  /* Adjust grid areas for main element in mobile view */
+  main {
+    grid-template-areas:
+      'streaming'
+      'information'
+      'equipment'
+      'get-started'; /* Keep get-started in its own row */
+    grid-template-rows: repeat(3, 1fr); /* Adjusted to three rows for the main element */
+  }
+  }
