@@ -41,17 +41,6 @@ main > div > img {
   width: 100%; /* Set image width to 100% of its container */
   height: auto; /* Maintain the aspect ratio */
 }
-/* Set grid areas for containers */
-#container1 {
-  grid-area: streaming;
-}
-#container2 {
-  grid-area: information;
-}
-#container3 {
-  grid-area: equipment;
-}
-
 #get-started-section {
   background-color: #B3E1E6; /* Set background color */
   border-radius: 10px; /* Apply rounded corners */
@@ -61,10 +50,10 @@ main > div > img {
   margin-top: 20px; /* Add top margin */  
 }
 /* Style for the main element */
-main {
+/* main {
   background-color: #B3E1E6; /* Set background color for the main element */
-  padding: 20px; /* Add padding inside the main element */
-}
+  /* padding: 20px; Add padding inside the main element
+} */ 
 /* Style for .gamers class */
 .gamers {
   display: flex; /* Enable flex layout for the .gamers class */
@@ -76,24 +65,12 @@ main {
   width: 100%; /* Set image width to 100% of its container */
   height: auto; /* Maintain the aspect ratio */
 }
-/* Media query for large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  main {
-    grid-template-areas:
-      'streaming equipment'
-      'information'
-      'get-started get-started'; /* Adjusted grid area for get-started in larger devices */
-    grid-template-rows: repeat(2, 1fr) auto;
-  }
-}/* Media query for small devices (mobile view, up to 991px) */
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 768px) {
   /* Set .gamers class to full width */
   .gamers {
-    flex-direction: column; /* Stack items vertically */
-    
+    flex-direction: column; /* Stack items vertically */    
     height: auto; /* Set height to auto */
   }
-
   /* Remove margin-top for .gamers */
   .gamers {
     margin-top: 0; /* Remove top margin */
@@ -105,19 +82,16 @@ main {
     grid-area: streaming;
     width: 100%;
   }
-
   /* Set #container2 (equipment) to full width below #container1 */
   #container2 {
     grid-area: information;
     width: 100%;
   }
-
   /* Set #container3 to full width below #container2 */
   #container3 {
     grid-area: equipment;
     width: 100%;
   }
-
   /* Adjust grid areas for main element in mobile view */
   main {
     grid-template-areas:
@@ -128,3 +102,39 @@ main {
     grid-template-rows: repeat(3, 1fr); /* Adjusted to three rows for the main element */
   }
   }
+/* Media query for large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 769px) {
+  main {
+    background: #B3E1E6;
+    display: grid;
+    grid-template-areas:      
+      'streaming '
+      'equipment origin'
+      'get-started';
+    grid-template-columns: 1fr 1fr; /* Add two columns for containers 2 and 3 */
+    padding: 20px;
+  }
+ /* Set #container1 to full width below .gamers */
+ #container1 {
+  grid-area: streaming;
+  width: 100%;
+}
+  /* Set #container2 (equipment) to full width below #container1 */
+  #container2 {
+    grid-area: equipment;
+    width: 100%;
+  }
+  /* Set #container3 to full width below #container2 */
+  #container3 {
+    grid-area: origin; /* Adjust grid area for container 3 */
+    width: 100%;
+  }
+  #get-started-section {
+    background-color: #B3E1E6; /* Set background color */
+    border-radius: 10px; /* Apply rounded corners */
+    font-size: 30px; /* Set font size */
+    padding: 20px; /* Add padding inside the section */
+    text-align: center; /* Left align text */
+    margin-top: 20px; /* Add top margin */  
+  }
+}
