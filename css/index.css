@@ -167,3 +167,6 @@
 	  box-sizing: border-box;
 	}
   }
+  h2 {
+	display: none;
+  }

@@ -64,7 +64,7 @@ main > div > img {
 }
 /* Style for the main element */
 main {
-  background-color: #379392; /* Set background color for the main element */
+  background-color: #B3E1E6; /* Set background color for the main element */
   display: grid; /* Enable grid layout for the main element */
   grid-template-areas:
   'streaming equipment'
