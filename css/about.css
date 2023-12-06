@@ -40,6 +40,7 @@ main > div > a:focus {
 main > div > img {
   width: 100%; /* Set image width to 100% of its container */
   height: auto; /* Maintain the aspect ratio */
+  padding: 20px; /* Add padding inside the section */
 }
 #get-started-section {
   background-color: #B3E1E6; /* Set background color */
