@@ -6,23 +6,23 @@
 		<lastmod>2023-12-06</lastmod>
 	</url>
 	<url>
-		<loc>http://www.www.streamersupplyinfo.com.au/sources.html</loc>
+		<loc>http://www.www.streamersupplyinfo.com.au/about.html</loc>
 		<priority>0.50</priority>
-		<lastmod>2023-12-03</lastmod>
-	</url>
-	<url>
-		<loc>http://www.www.streamersupplyinfo.com.au/gallery.html</loc>
-		<priority>0.50</priority>
-		<lastmod>2023-11-29</lastmod>
+		<lastmod>2023-12-06</lastmod>
 	</url>
 	<url>
 		<loc>http://www.www.streamersupplyinfo.com.au/contact.html</loc>
 		<priority>0.50</priority>
-		<lastmod>2023-12-02</lastmod>
+		<lastmod>2023-12-12</lastmod>
 	</url>
 	<url>
-		<loc>http://www.www.streamersupplyinfo.com.au/about.html</loc>
+		<loc>http://www.www.streamersupplyinfo.com.au/gallery.html</loc>
 		<priority>0.50</priority>
-		<lastmod>2023-12-06</lastmod>
+		<lastmod>2023-12-12</lastmod>
+	</url>
+	<url>
+		<loc>http://www.www.streamersupplyinfo.com.au/sources.html</loc>
+		<priority>0.50</priority>
+		<lastmod>2023-12-12</lastmod>
 	</url>
 </urlset>
